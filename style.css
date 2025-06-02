@@ -1,47 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: #fff0f6;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #fce3ec, #ffe3f0);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
 }
 
-.container {
+.wrapper {
+  padding: 20px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.card {
   background: white;
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
   color: #d63384;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-form input, form button {
-  display: block;
+p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+input {
   width: 100%;
-  padding: 10px;
-  margin: 10px auto;
+  padding: 12px;
+  margin-bottom: 14px;
   border-radius: 8px;
   border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  background-color: #198754;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #157347;
 }
 
 .follow-btn {
   display: inline-block;
-  padding: 10px 15px;
-  margin: 15px 0;
-  background: #d63384;
+  background-color: #d63384;
   color: white;
-  text-decoration: none;
+  padding: 10px 15px;
+  margin-bottom: 20px;
   border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
 }
 
-button {
-  background: #198754;
-  color: white;
-  border: none;
-  cursor: pointer;
+.follow-btn:hover {
+  background-color: #b72c70;
+}
+
+#status {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #198754;
 }
