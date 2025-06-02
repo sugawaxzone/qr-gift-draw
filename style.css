@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  color: #d63384;
+}
+
+form input, form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.follow-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 15px 0;
+  background: #d63384;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+button {
+  background: #198754;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
