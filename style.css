@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom right, #fce3ec, #ffe3f0);
+  background: linear-gradient(to bottom right, #ffffff, #cce7d8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-  color: #d63384;
+  color: #00874d;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -65,7 +65,7 @@ button:hover {
 
 .follow-btn {
   display: inline-block;
-  background-color: #d63384;
+  background-color: #00874d;
   color: white;
   padding: 10px 15px;
   margin-bottom: 20px;
@@ -76,7 +76,7 @@ button:hover {
 }
 
 .follow-btn:hover {
-  background-color: #b72c70;
+  background-color: #000000;
 }
 
 #status {
