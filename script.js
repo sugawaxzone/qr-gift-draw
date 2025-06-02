@@ -10,7 +10,7 @@ form.addEventListener("submit", async (e) => {
   status.innerText = "Submitting...";
 
   try {
-    const res = await fetch("https://script.google.com/a/macros/waxzone.ca/s/AKfycbz1rpS5vcMkwyTpub-S69ddYGMUGpyFTbptAAkWTv8O0GoMJbHpkJuz8LE9xoIYMCs/exechttps://script.google.com/a/macros/waxzone.ca/s/AKfycbzRyVtv1BPahWocDAcoPyIbrCL_SW7hihdjJ_QosHtLDU7v0ura5uIetrvpx81vrA/exec", {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbylYn_B_WYU_BDTTxEY2cJQ82zlmmp6erBEZ_wv9GGWAucxdNUI32hNrrwbwbZFp50/exec", {
       method: "POST",
       body: data,
     });
