@@ -141,6 +141,7 @@ form button:hover {
 
 .popup-content h2 {
   margin-top: 0;
+  margin-buttom: 5px;
   color: #d63384;
 }
 
