@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Win a $100 Gift Card</title>
+  <title>Win a $200 Gift Card</title>
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -23,12 +23,51 @@
         <p id="status"></p>
       </form>
 
-      <!-- Moved Follow button here with Instagram icon -->
+      <!-- Instagram follow button -->
       <a href="https://instagram.com/sugawaxzone" target="_blank" class="follow-btn">
         <i class="fab fa-instagram"></i> Follow Us on Instagram
       </a>
+
+      <!-- Terms & Conditions -->
+      <p class="terms">
+        By entering, you agree to our 
+        <a href="#terms-popup" id="open-terms">Terms & Conditions</a>.
+      </p>
     </div>
   </div>
+
+  <!-- Terms & Conditions Popup -->
+  <div id="terms-popup" class="popup">
+    <div class="popup-content">
+      <h2>Terms & Conditions</h2>
+      <p>
+        - The giveaway is open to residents of Canada aged 18 and older.<br/>
+        - One entry per person. Multiple entries will be disqualified.<br/>
+        - To be eligible, you must: Follow @sugawaxzone on Instagram, Tag 2 friends, and Submit this form.<br/>
+        - The winner will be drawn randomly and contacted via email or Instagram DM.<br/>
+        - The prize is a $200 gift card, non-transferable and no cash equivalent.<br/>
+        - Giveaway ends on [Insert Date]. Winner will be announced on our Instagram page.<br/>
+        - This giveaway is not sponsored, endorsed or administered by Instagram.<br/>
+      </p>
+      <button id="close-terms">Close</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
+  <script>
+    // Simple popup logic
+    const openTerms = document.getElementById('open-terms');
+    const closeTerms = document.getElementById('close-terms');
+    const popup = document.getElementById('terms-popup');
+
+    openTerms.addEventListener('click', function(e) {
+      e.preventDefault();
+      popup.style.display = 'flex';
+    });
+
+    closeTerms.addEventListener('click', function() {
+      popup.style.display = 'none';
+    });
+  </script>
 </body>
 </html>
