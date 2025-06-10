@@ -37,13 +37,13 @@ body {
 }
 
 .card h1 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #00874d;
   margin-bottom: 10px;
 }
 
 .card p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #555;
   margin-bottom: 20px;
 }
