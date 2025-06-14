@@ -5,8 +5,6 @@ form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const data = new FormData(form);
-  const object = Object.fromEntries(data.entries());
-
   status.innerText = "Submitting...";
 
   try {
@@ -15,9 +13,13 @@ form.addEventListener("submit", async (e) => {
       body: data,
     });
 
-    if (res.ok) {
+    const result = await res.text(); // ← Get raw response from server
+
+    if (result === "SUCCESS") {
       status.innerText = "Thanks! You’re entered into the draw.";
       form.reset();
+    } else if (result === "DUPLICATE") {
+      status.innerText = "You’ve already entered. Only one entry per person is allowed.";
     } else {
       status.innerText = "Something went wrong. Please try again.";
     }
