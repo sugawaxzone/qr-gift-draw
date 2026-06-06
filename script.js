@@ -7,7 +7,7 @@ form.addEventListener("submit", async (e) => {
   status.innerText = "Submitting...";
 
   try {
-    await fetch("https://script.google.com/macros/s/AKfycbxoQW5UxfXuTD8acM2_djttCk3HbnGiY7hXTVXb0hTk1W1bMImfYll67v96swJtb2m-fg/exec", {
+    await fetch("https://script.google.com/macros/s/AKfycbzegPwIir9lXKDVy14uK1IQBZtOhDkXhiToHTJG9elFU7NIMjYThngVYdxvXeGNtMgCSQ/exec", {
       method: "POST",
       body: data,
       mode: "no-cors", // ← fixes the CORS error
