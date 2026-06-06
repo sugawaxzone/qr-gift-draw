@@ -8,7 +8,7 @@ form.addEventListener("submit", async (e) => {
   status.innerText = "Submitting...";
 
   try {
-    const res = await fetch("https://script.google.com/macros/s/AKfycbzUs-JdW_6B-xiifR9rcjWWX7WaBj2z7NOn9RdxhbZjLhuFXVZO_AhazEQLTzlZ2wlqPg/exec", {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbxoQW5UxfXuTD8acM2_djttCk3HbnGiY7hXTVXb0hTk1W1bMImfYll67v96swJtb2m-fg/exec", {
       method: "POST",
       body: data,
     });
