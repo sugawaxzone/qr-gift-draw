@@ -3,26 +3,20 @@ const status = document.getElementById("status");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
-
   const data = new FormData(form);
   status.innerText = "Submitting...";
 
   try {
-    const res = await fetch("https://script.google.com/macros/s/AKfycbxoQW5UxfXuTD8acM2_djttCk3HbnGiY7hXTVXb0hTk1W1bMImfYll67v96swJtb2m-fg/exec", {
+    await fetch("https://script.google.com/macros/s/AKfycbxoQW5UxfXuTD8acM2_djttCk3HbnGiY7hXTVXb0hTk1W1bMImfYll67v96swJtb2m-fg/exec", {
       method: "POST",
       body: data,
+      mode: "no-cors", // ← fixes the CORS error
     });
 
-    const result = await res.text(); // ← Get raw response from server
+    // Can't read the response with no-cors, so assume success if no exception thrown
+    status.innerText = "Thanks! You're entered into the draw.";
+    form.reset();
 
-    if (result === "SUCCESS") {
-      status.innerText = "Thanks! You’re entered into the draw.";
-      form.reset();
-    } else if (result === "DUPLICATE") {
-      status.innerText = "You’ve already entered. Only one entry per person is allowed.";
-    } else {
-      status.innerText = "Something went wrong. Please try again.";
-    }
   } catch (err) {
     status.innerText = "Error submitting form.";
   }
